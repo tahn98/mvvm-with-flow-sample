@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.mvvmwithflowexample.ui.main.MainFragment"
+        android:label="Main Fragment">
+
+        <action
+            android:id="@+id/action_mainFragment_to_weatherForecastOneShotFragment"
+            app:destination="@id/weatherForecastOneshotFragment"
+            />
+
+        <action
+            android:id="@+id/action_mainFragment_to_weatherForecastDataStreamFragment"
+            app:destination="@id/weatherForecastDataStreamFragment"
+            />
+
+        <action
+            android:id="@+id/action_mainFragment_to_weatherForecastFlowDataStreamFragment"
+            app:destination="@id/weatherForecastFlowDataStreamFragment"
+            />
+
+        <action
+            android:id="@+id/action_mainFragment_to_searchCityFragment"
+            app:destination="@id/searchCityFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/weatherForecastOneshotFragment"
+        android:name="com.example.mvvmwithflowexample.ui.weatherforecast.WeatherForecastOneshotFragment"
+        android:label="Weather Oneshot Request"
+        />
+
+    <fragment
+        android:id="@+id/weatherForecastDataStreamFragment"
+        android:name="com.example.mvvmwithflowexample.ui.weatherforecast.WeatherForecastDataStreamFragment"
+        android:label="Weather DataStream Request"
+        />
+
+    <fragment
+        android:id="@+id/weatherForecastFlowDataStreamFragment"
+        android:name="com.example.mvvmwithflowexample.ui.weatherforecast.WeatherForecastDataStreamFlowFragment"
+        />
+
+    <fragment
+        android:id="@+id/searchCityFragment"
+        android:name="com.example.mvvmwithflowexample.ui.search.SearchCityFragment"
+        />
+
+</navigation>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MvvmWithFlowExample</string>
+    <string name="check_weather_forecast_one_shot_request">Check Weather Forecast (one shot request)</string>
+    <string name="check_weather_forecast_data_stream_request">Check Weather Forecast (data stream request)</string>
+    <string name="change_theme">Change Theme</string>
+    <string name="check_weather_forecast_flow_data_stream">Check Weather Forecast (Flow Data Stream)</string>
+    <string name="search_city">Search City</string>
+</resources>
